@@ -49,4 +49,4 @@ $ pm2 save
 - 必要な権限
   - Send Messages
 
-### 4.tokenはBot設定ページの Click to Reveal Token をクリックして表示されるTokenを使用する
+### 4.tokenはBot設定ページの Click to Reveal Token をクリックして表示される物を使用する
