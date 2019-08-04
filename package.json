@@ -1,0 +1,24 @@
+{
+  "name": "discord-oumukaesi",
+  "version": "1.0.0",
+  "description": "discord.jsを使ったdiscord bot",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakkuntyo/discord-oumukaesi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sakkuntyo/discord-oumukaesi/issues"
+  },
+  "homepage": "https://github.com/sakkuntyo/discord-oumukaesi#readme"
+}
