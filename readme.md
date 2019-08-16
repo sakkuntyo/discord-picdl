@@ -34,7 +34,7 @@ $ pm2 startup
 $ pm2 save
 ```
 
-## [Discord Developer Portal](https://discordapp.com/)のページで行う事
+## [Discord Developer Portal](https://discordapp.com/developers/)のページで行う事
 
 ### 1.アプリケーション作成
 
