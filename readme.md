@@ -2,6 +2,8 @@
 
 discord.jsを使ったdiscord bot
 
+[招待リンク](https://discordapp.com/api/oauth2/authorize?client_id=620442080606683151&permissions=34816&scope=bot)
+
 ## 目的
 
 - Discordに上げられた画像をDLするステップが多いためめんどくさい(3Step)
