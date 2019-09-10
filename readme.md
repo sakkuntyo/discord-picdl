@@ -10,10 +10,7 @@ discord.jsを使ったdiscord bot
   - 画像をクリック -> 元ファイルを開く -> 名前をつけて画像を保存
 
 - Step数を減らして楽にしたい
-  - 1.画像に対し返信されるURLクリック -> 名前を付けて画像を保存
-  - 2.URLクリックしたら一発でダウンロードされる（DropBox使うとできそう、[このやり方](https://help.dropbox.com/ja-jp/files-folders/share/force-download)）
-  
-現状は1の2Step
+  - URLクリックしたら一発でダウンロードされる様にして対応
 
 ## 動作環境
 
