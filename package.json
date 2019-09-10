@@ -4,7 +4,10 @@
   "description": "discord.jsを使ったdiscord bot",
   "main": "index.js",
   "dependencies": {
-    "discord.js": "github:discordjs/discord.js"
+    "discord.js": "github:discordjs/discord.js",
+    "dropbox": "^4.0.30",
+    "isomorphic-fetch": "^2.2.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {},
   "scripts": {
