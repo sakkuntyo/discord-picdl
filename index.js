@@ -11,6 +11,11 @@ const fetch = require('isomorphic-fetch');
 const dropbox = require('dropbox').Dropbox;
 const dbx = new dropbox({ accessToken: dropboxtoken, fetch: fetch});
 
+//bitlyの操作に必要
+const bitlytoken = '<bitlytoken>'
+const { BitlyClient } = require('bitly');
+const bitly = new BitlyClient(bitlytoken, {});
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -35,7 +40,14 @@ client.on('message', msg => {
           path: `/${filename}`
         }).then((res) => {
           console.log(res)
-          msg.channel.send("<" + res.link + ">")
+          //短縮リンク作成
+          bitly.shorten(res.link)
+          .then((res) => {
+            console.log(res)
+            msg.channel.send("<" + res.url + ">")
+          }).catch((err) => {
+            console.log(err)
+          })
         }).catch((err) => {
           console.log(err)
         })
