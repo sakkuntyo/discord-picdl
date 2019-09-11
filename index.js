@@ -35,7 +35,7 @@ client.on('message', msg => {
           path: `/${filename}`
         }).then((res) => {
           console.log(res)
-          msg.channel.send(res.link)
+          msg.channel.send("<" + res.link + ">")
         }).catch((err) => {
           console.log(err)
         })
