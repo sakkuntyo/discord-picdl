@@ -18,6 +18,7 @@ discord.jsを使ったdiscord bot
 - nodejs 10.16.1
 - discord.js library
 - dropbox library
+- bitly library
 
 ## 起動方法
 
@@ -34,6 +35,7 @@ $ git clone https://github.com/sakkuntyo/discord-oumukaesi-nodejs
 $ cd discord-oumukaesi-nodejs
 $ sed "s/<discordtoken>/ここにdiscordのトークンを入れる/g" -i index.js
 $ sed "s/<dropboxtoken>/ここにdropboxのトークンを入れる/g" -i index.js
+$ sed "s/<bitlytoken>/ここにbitlyのトークンを入れる/g" -i index.js
 $ npm install
 $ npm start
 
