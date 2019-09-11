@@ -1,4 +1,4 @@
-# discordで送った画像のリンクを返すBot
+# discordで送った画像のダウンロード用リンクを返すBot
 
 discord.jsを使ったdiscord bot
 
