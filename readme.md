@@ -48,7 +48,7 @@ $ pm2 startup
 $ pm2 save
 ```
 
-## [Discord Developer Portal](https://discordapp.com/developers/)のページで行う事
+## [Discord Developer Portal](https://discordapp.com/developers/)でする事
 
 ### 1.アプリケーション作成
 
@@ -64,3 +64,8 @@ $ pm2 save
   - Send Messages
 
 ### 4.tokenはBot設定ページの Click to Reveal Token をクリックして表示される物を使用する
+
+
+## [Dropbox Developer](https://www.dropbox.com/developers/apps)でする事
+
+## [bitly itlinks](http://bitly.com/a/oauth_apps)でする事
