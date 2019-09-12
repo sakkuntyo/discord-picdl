@@ -1,5 +1,7 @@
 # discordで送った画像のダウンロード用リンクを返すBot
 
+![リンクをもらうまで](https://raw.githubusercontent.com/wiki/sakkuntyo/discord-pictureDownloader/images/20190912_112041516_iOS.gif)
+
 discord.jsを使ったdiscord bot
 
 [招待リンク](https://discordapp.com/api/oauth2/authorize?client_id=620442080606683151&permissions=34816&scope=bot)
