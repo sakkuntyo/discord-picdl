@@ -36,12 +36,12 @@ client.on('message', msg => {
       }).then((res) => {
         console.log(res)
         //画像ダウンロードリンク作成
-        dbx.filesGetTemporaryLink({
+        dbx.sharingCreateSharedLink({
           path: `/${filename}`
         }).then((res) => {
           console.log(res)
           //短縮リンク作成
-          bitly.shorten(res.link)
+          bitly.shorten(res.url.replace("dl=0","dl=1"))
           .then((res) => {
             console.log(res)
             msg.channel.send("<" + res.url + ">")
@@ -57,5 +57,5 @@ client.on('message', msg => {
     })
   })
 });
-
+  
 client.login(discordtoken);
