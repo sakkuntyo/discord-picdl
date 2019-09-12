@@ -16,9 +16,11 @@
 
 - ubuntu 18.04
 - nodejs 10.16.1
-- discord.js library
-- dropbox library
-- bitly library
+  - discord.js
+  - dropbox 4.0.30
+  - bitly 6.1.0
+  - isomorphic-fetch 2.2.1
+  - request 2.88.0
 
 ## 起動方法
 
