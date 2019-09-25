@@ -17,6 +17,9 @@ const { BitlyClient } = require('bitly');
 const bitly = new BitlyClient(bitlytoken, {});
 
 client.on('ready', () => {
+  if(!(fs.existsSync("./tmp"))){
+    fs.mkdirSync("./tmp")
+  }
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
