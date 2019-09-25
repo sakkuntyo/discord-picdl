@@ -31,16 +31,20 @@ client.on('message', msg => {
     var request = require("request");
       
     request.get(a.attachment,{encoding: null},(err,res,body) => {
+      //ランダムファイル名作成
+      var filename = Math.random().toString(32).substring(2)
+      //tmpフォルダに書き込み
+      fs.writeFileSync("./tmp/" + filename,body)
+
       //画像アップロード
-      var filename = Math.random().toString(32).substring(2) + ".jpg"
       dbx.filesUpload({
-        path: `/${filename}`,
+        path: `/${filename}.jpg`,
         contents: body
       }).then((res) => {
         console.log(res)
         //画像ダウンロードリンク作成
         dbx.sharingCreateSharedLink({
-          path: `/${filename}`
+          path: `/${filename}.jpg`
         }).then((res) => {
           console.log(res)
           //短縮リンク作成
@@ -48,6 +52,9 @@ client.on('message', msg => {
           .then((res) => {
             console.log(res)
             msg.channel.send("<" + res.url + ">")
+
+            //アップロードしたファイルの削除
+            fs.unlinkSync("./tmp/" + filename)
           }).catch((err) => {
             console.log(err)
           })
